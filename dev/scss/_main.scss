@@ -25,9 +25,24 @@ body.page {
     padding: 0 40px;
   }
 
-  img.about-image {
-    height: 500px;
-    width: auto;
+  a.button {
+    display: inline-block;
+    line-height: 23px;
+    vertical-align: middle;
+    background-color: #746F33;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 80px 12px 32px;
+    background-image: url("img/arrow-right.png");
+    background-position: center right 20px;
+    background-repeat: no-repeat;
+
+    :hover, :visited, :focus {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   .row.quote {
@@ -94,6 +109,8 @@ body.page {
   }
 
   #footer {
+    margin: 100px auto;
+
     .social-icons {
       text-align: center;
 
@@ -107,6 +124,10 @@ body.page {
           vertical-align: baseline;
         }
       }
+    }
+
+    .row {
+      justify-content: center;
     }
 
     .line {
@@ -126,5 +147,24 @@ body.page {
 body.page-template-page-about {
   blockquote {
     max-width: 660px;
+  }
+
+  img.about-image {
+    max-width: 333px;
+  }
+
+  img.contact-image {
+    max-width: 500px;
+  }
+
+  .contact-row {
+    justify-content: space-around;
+  }
+
+  .contact-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
   }
 }

@@ -1,7 +1,8 @@
 <?php
 
 add_action('wp_enqueue_scripts', 'cai_styles');
-function cai_styles(){
+function cai_styles()
+{
   wp_register_style(
     'google-fonts',
     'https://fonts.googleapis.com/css?family=Maitree:400,700|Nunito+Sans:400,600,700|Nunito:700'
@@ -17,8 +18,9 @@ function cai_styles(){
 }
 
 add_filter('style_loader_tag', 'cai_add_css_meta', 10, 2);
-function cai_add_css_meta($link, $handle){
-  switch($handle){
+function cai_add_css_meta($link, $handle)
+{
+  switch ($handle) {
     case 'fontawesome':
       $link = str_replace('/>', ' integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">', $link);
       break;
@@ -28,7 +30,8 @@ function cai_add_css_meta($link, $handle){
 }
 
 add_action('after_setup_theme', 'cai_setup');
-function cai_setup(){
+function cai_setup()
+{
   add_theme_support('post-thumbnails');
   add_theme_support('custom-logo');
 
