@@ -4,6 +4,77 @@ body.page {
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
 
+  h2 {
+    color: #746F33;
+    font-size: 60px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .page-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px auto;
+  }
+
+  .page-content {
+    border-left: 2px solid #746F33;
+    padding: 0 40px;
+  }
+
+  img.about-image {
+    height: 500px;
+    width: auto;
+  }
+
+  .row.quote {
+    justify-content: center;
+    margin: 64px auto;
+
+    blockquote {
+      p {
+        font-size: 20px;
+        font-family: 'Barlow', sans-serif;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      p:before, p:after {
+        font-family: "Helvetica", serif;
+        font-size: 100px;
+        font-style: normal;
+        line-height: 30px;
+        color: #746F33;
+        opacity: 0.75;
+        position: absolute;
+      }
+
+      p:before {
+        content: "\201c";
+        left: -26px;
+        top: 18px;
+      }
+
+      p:after {
+        content: "\201d";
+        bottom: 14px;
+        margin-left: 6px;
+      }
+
+      cite {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        color: #746F33;
+        opacity: 0.75;
+        float: right;
+      }
+    }
+  }
+
   #header.large {
     text-align: center;
 
@@ -50,31 +121,10 @@ body.page {
       font-size: 18px;
     }
   }
+}
 
-
-  h2 {
-    color: #746F33;
-    font-size: 60px;
-    font-family: 'Barlow Condensed', sans-serif;
-  }
-
-  h3 {
-    font-size: 22px;
-  }
-
-  .page-title {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 30px auto;
-  }
-
-  .page-content {
-    border-left: 2px solid #746F33;
-    padding: 0 40px;
-  }
-
-  img.about-image {
-    height: 500px;
-    width: auto;
+body.page-template-page-about {
+  blockquote {
+    max-width: 660px;
   }
 }
