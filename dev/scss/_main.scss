@@ -1,0 +1,55 @@
+body.page {
+  color: #3C3C38;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+
+  #header.large img.custom-logo {
+    margin-top: 110px;
+  }
+
+  #header.small {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  #header.small img.custom-logo {
+    width: 345px;
+    height: auto;
+  }
+
+  #footer .line {
+    width: 260px;
+    border-bottom: 2px solid #746F33;
+    padding: 0;
+    margin: 12px;
+  }
+
+  #footer .copyright {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+  }
+
+  h2 {
+    color: #746F33;
+    font-size: 60px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+  .page-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px auto;
+  }
+  img.about-image {
+    height: 500px;
+    width: auto;
+  }
+  .page-content {
+    border-left: 2px solid #746F33;
+    padding: 0 40px;
+  }
+}
