@@ -1,11 +1,9 @@
 <?php
 
-if (function_exists('acf_add_options_page')) {
-  acf_add_options_page();
-}
-
-if( function_exists('acf_add_local_field_group') ):
-
+add_action('acf/init', 'cai_add_custom_fields');
+function cai_add_custom_fields()
+{
+  acf_add_options_page("Theme Settings");
   acf_add_local_field_group(array(
     'key' => 'group_5d3a7114697b0',
     'title' => 'Social Media Accounts',
@@ -90,9 +88,9 @@ if( function_exists('acf_add_local_field_group') ):
     'location' => array(
       array(
         array(
-          'param' => 'post_type',
+          'param' => 'options_page',
           'operator' => '==',
-          'value' => 'post',
+          'value' => 'acf-options-theme-settings',
         ),
       ),
     ),
@@ -105,5 +103,4 @@ if( function_exists('acf_add_local_field_group') ):
     'active' => true,
     'description' => '',
   ));
-
-endif;
+}
