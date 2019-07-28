@@ -23,7 +23,6 @@ h3 {
 }
 
 .page-content {
-  border-left: 2px solid #746F33;
   padding: 0 40px;
 }
 
@@ -107,6 +106,7 @@ a.button {
 
   nav.navbar, nav.navbar > div.container {
     padding: 0;
+    justify-content: center;
   }
 }
 
@@ -123,8 +123,16 @@ a.button {
   }
 }
 
-#header.large ul.dropdown-menu li.menu-item a.dropdown-item {
-  padding-left: 82px;
+#header.large {
+  margin-bottom: 30px;
+
+  ul.nav {
+    max-width: 960px;
+  }
+
+  ul.dropdown-menu li.menu-item a.dropdown-item {
+    padding-left: 82px;
+  }
 }
 
 #header-navbar {
@@ -151,10 +159,10 @@ a.button {
     ul.dropdown-menu {
       width: 100%;
       border: none;
-      background-color: transparent;
+      background-color: white;
 
       a.dropdown-item:hover {
-        background-color: transparent;
+        background-color: white;
         color: #FFB575;
       }
     }
@@ -226,6 +234,10 @@ a.button {
 
 
 body.page-template-page-about {
+  .page-content {
+    border-left: 2px solid #746F33;
+  }
+
   blockquote {
     max-width: 660px;
   }
