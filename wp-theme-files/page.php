@@ -14,7 +14,7 @@
     <section class="row home-gallery">
       <?php
       $code = '[phmm-project id="' . get_sub_field("gallery") . '"]';
-      echo $code;
+      echo "generated shortcode: " . $code;
       echo codeneric\phmm\base\frontend\Main::gallery_shortcode($code);
 //      echo do_shortcode($code);
       ?>

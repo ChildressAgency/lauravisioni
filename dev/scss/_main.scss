@@ -1,19 +1,24 @@
 body {
   box-sizing: border-box;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 18px;
 }
 
 h2 {
   color: #746F33;
   font-size: 60px;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 h3 {
   color: #3C3C38;
   font-size: 22px;
   font-weight: 500;
+}
+
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
 }
 
 .page-title {
@@ -26,19 +31,24 @@ h3 {
   padding: 0 40px;
 }
 
-a.button {
+.row {
+  justify-content: center;
+}
+
+a.button, .wpcf7 input[type=submit] {
   display: inline-block;
   line-height: 23px;
   vertical-align: middle;
   background-color: #746F33;
   font-size: 24px;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   text-decoration: none;
   color: white;
   padding: 10px 80px 12px 32px;
   background-image: url("img/arrow-right.png");
   background-position: center right 20px;
   background-repeat: no-repeat;
+  border: none;
 
   :hover, :visited, :focus {
     text-decoration: none;
@@ -53,7 +63,7 @@ a.button {
   blockquote {
     p {
       font-size: 20px;
-      font-family: 'Barlow', sans-serif;
+      font-family: "Barlow", sans-serif;
       font-style: italic;
       font-weight: 500;
     }
@@ -81,7 +91,7 @@ a.button {
     }
 
     cite {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: "Josefin Sans", sans-serif;
       font-size: 26px;
       font-style: normal;
       color: #746F33;
@@ -146,7 +156,7 @@ a.button {
       position: relative;
 
       a {
-        font-family: 'Barlow Condensed', sans-serif;
+        font-family: "Barlow Condensed", sans-serif;
         font-size: 24px;
         color: #3C3C38;
       }
@@ -168,7 +178,7 @@ a.button {
     }
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     ul#menu-header-menu > li.menu-item:not(:first-child):before {
       content: "\2022";
       color: #746F33;
@@ -227,17 +237,22 @@ a.button {
   }
 
   .copyright {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
     font-size: 18px;
   }
 }
 
+.left-border {
+  border-left: 2px solid #746F33;
+}
+
+body.page-template-page-contact {
+  h3 {
+    text-indent: 20%;
+  }
+}
 
 body.page-template-page-about {
-  .page-content {
-    border-left: 2px solid #746F33;
-  }
-
   blockquote {
     max-width: 660px;
   }
@@ -259,5 +274,39 @@ body.page-template-page-about {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+  }
+}
+
+#cc_phmm_public_project > div > div {
+  border: none;
+  box-shadow: none !important;
+}
+
+.wpcf7 {
+  label {
+    height: 26px;
+    font-family: "Barlow", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+  }
+
+  label.secondary {
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  input[type=text], input[type=email], textarea {
+    border: 2px solid #1A1818;
+    background-color: #fffcf9;
+  }
+
+  input[type=text], input[type=email] {
+    height: 45px;
+    max-width: none;
+  }
+
+  .wpcf7-form-control-wrap {
+    display: block;
   }
 }

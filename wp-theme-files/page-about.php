@@ -5,12 +5,12 @@ get_header(); ?>
   <section class="row">
     <?php if (get_field("about_image")) : ?>
       <div class="col-lg-5 col-sm-12">
-        <img class="about-image" src="<?php echo get_field("about_image") ?>" alt=""/>
+        <img class="img-fluid" src="<?php echo get_field("about_image") ?>" alt=""/>
       </div>
     <?php endif ?>
     <article class="col-lg-7 col-sm-12" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <h2 class="page-title"><?php the_title() ?></h2>
-      <div class="page-content">
+      <div class="page-content left-border">
         <?php the_content(); ?>
       </div>
     </article>
@@ -28,11 +28,11 @@ get_header(); ?>
 
   <section class="row contact-row">
     <?php if (get_field("contact_image")) : ?>
-      <div class="col-lg col-sm-12">
-        <img class="contact-image" src="<?php echo get_field("contact_image") ?>" alt=""/>
+      <div class="col-md-6 col-sm-12">
+        <img class="contact-image img-fluid" src="<?php echo get_field("contact_image") ?>" alt=""/>
       </div>
     <?php endif ?>
-    <div class="col-lg col-sm-12 contact-col">
+    <div class="col-md-5 col-sm-12 contact-col">
       <p></p>
       <img src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" alt="Logo"/>
 

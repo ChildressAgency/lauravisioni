@@ -4,6 +4,7 @@
   while (have_posts()) : ?>
     <section>
       <?php the_post(); ?>
+      <?php the_content(); ?>
       <div style="height: 400px"></div>
     </section>
   <?php
