@@ -131,6 +131,10 @@ a.button, .wpcf7 input[type=submit] {
       font-size: 22px;
     }
   }
+
+  #header-navbar {
+    justify-content: flex-end;
+  }
 }
 
 #header.large {
@@ -143,11 +147,13 @@ a.button, .wpcf7 input[type=submit] {
   ul.dropdown-menu li.menu-item a.dropdown-item {
     padding-left: 82px;
   }
+
+  #header-navbar {
+    justify-content: center;
+  }
 }
 
 #header-navbar {
-  justify-content: flex-end;
-
   ul.nav {
     flex-grow: 1;
 
