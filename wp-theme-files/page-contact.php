@@ -1,6 +1,4 @@
-<?php
-/* Template Name: Contact Page */
-get_header(); ?>
+<?php get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
   <section class="row">
     <?php if (get_field("contact_image")) : ?>
