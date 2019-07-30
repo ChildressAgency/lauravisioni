@@ -1,7 +1,8 @@
 <?php
 
 add_action('wp_footer', 'show_template');
-function show_template() {
+function show_template()
+{
   global $template;
   print_r($template);
 }
@@ -84,6 +85,19 @@ function cai_setup()
   register_nav_menus(array(
     'header-nav' => 'Header Navigation'
   ));
+}
+
+add_action('init', 'cai_create_post_types');
+function cai_create_post_types()
+{
+  register_post_type("print", array(
+    "public" => true,
+    "labels" => array(
+      "name" => "Prints",
+      "singular" => "Print"
+    )
+  ));
+  flush_rewrite_rules();
 }
 
 add_action('widgets_init', 'cai_widgets_init');

@@ -316,3 +316,61 @@ body.page-template-page-about {
     display: block;
   }
 }
+
+body.single-print {
+  section {
+    margin-top: 48px;
+  }
+
+  section.image {
+    text-align: center;
+  }
+
+  .large-image {
+    max-height: 900px;
+    width: auto;
+  }
+
+  .description {
+    padding-left: 48px;
+
+    .size {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      margin-left: 32px;
+    }
+  }
+
+  .link-back, .link-back:hover, .link-back:visited, .link-back:focus, .link-back:active {
+    line-height: 23px;
+    vertical-align: middle;
+    display: block;
+    padding-top: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #3D3D39;
+    text-decoration: none;
+  }
+}
+
+div.print {
+  padding: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+
+div.print.portrait {
+  background-image: url("img/print-portrait.png");
+}
+
+div.print.landscape {
+  background-image: url("img/print-landscape.png");
+}
