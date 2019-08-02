@@ -35,6 +35,33 @@ h4 {
   justify-content: center;
 }
 
+.row.posts {
+  justify-content: flex-start;
+  margin-top: 64px;
+}
+
+h2.post-title {
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 16px;
+}
+
+h3.post-date {
+  font-size: 18px;
+}
+
+a.post-block, a.post-block:hover, a.post-block:focus, a.post-block:active {
+  text-decoration: none;
+}
+
+.post-thumbnail {
+  background-color: #F3F3F3;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 a.button, .wpcf7 input[type=submit] {
   display: inline-block;
   line-height: 23px;

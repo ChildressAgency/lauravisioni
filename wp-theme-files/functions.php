@@ -79,7 +79,7 @@ function cai_add_css_meta($link, $handle)
 add_action('after_setup_theme', 'cai_setup');
 function cai_setup()
 {
-  add_theme_support('post-thumbnails');
+  add_theme_support('post-thumbnails', array('post', 'page', 'print'));
   add_theme_support('custom-logo');
 
   register_nav_menus(array(
