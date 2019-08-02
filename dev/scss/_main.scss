@@ -31,35 +31,76 @@ h4 {
   padding: 0 40px;
 }
 
+.post, .posts {
+  margin-top: 64px;
+}
+
 .row {
   justify-content: center;
 }
 
 .row.posts {
   justify-content: flex-start;
-  margin-top: 64px;
+
+  h2.post-title {
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 16px;
+  }
+
+  h3.post-date {
+    font-size: 18px;
+  }
+
+  a.post-block, a.post-block:hover, a.post-block:focus, a.post-block:active {
+    text-decoration: none;
+  }
+
+  .post-thumbnail {
+    background-color: #F3F3F3;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-h2.post-title {
-  font-size: 32px;
-  font-weight: normal;
-  margin-top: 16px;
+.post {
+  .featured-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 525px;
+  }
+
+  .post-content {
+    max-width: 544px;
+
+    h3 {
+      text-indent: 16px;
+    }
+  }
+
+  h2 {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  h3.post-date {
+    margin-top: 32px;
+    text-align: center;
+  }
 }
 
-h3.post-date {
-  font-size: 18px;
-}
-
-a.post-block, a.post-block:hover, a.post-block:focus, a.post-block:active {
-  text-decoration: none;
-}
-
-.post-thumbnail {
-  background-color: #F3F3F3;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.nav-link {
+  a, a:hover, a:active, a:focus, a:visited {
+    font-size: 22px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3D3D39;
+  }
 }
 
 a.button, .wpcf7 input[type=submit] {
