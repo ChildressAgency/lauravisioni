@@ -13,7 +13,7 @@
 
       <h3 class="post-date col-md-10 col-sm-12"><?php the_date() ?></h3>
 
-      <h2 class=col-md-10"col-sm-12"><?php the_title() ?></h2>
+      <h2 class="col-md-10 col-sm-12"><?php the_title() ?></h2>
 
       <div class="col-md-10 col-sm-12 left-border row justify-content-around post-body">
         <section class="post-content"><?php the_content() ?></section>
