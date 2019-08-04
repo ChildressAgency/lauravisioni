@@ -35,10 +35,6 @@ h4 {
   margin-top: 64px;
 }
 
-.row {
-  justify-content: center;
-}
-
 .row.posts {
   justify-content: flex-start;
 
@@ -312,10 +308,6 @@ a.button, .wpcf7 input[type=submit] {
     }
   }
 
-  .row {
-    justify-content: center;
-  }
-
   .line {
     width: 260px;
     border-bottom: 2px solid #746F33;
@@ -350,10 +342,6 @@ body.page-template-page-about {
 
   img.contact-image {
     max-width: 500px;
-  }
-
-  .contact-row {
-    justify-content: space-around;
   }
 
   .contact-col {

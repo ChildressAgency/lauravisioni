@@ -26,7 +26,7 @@ get_header(); ?>
   </section>
 <?php endwhile; ?>
 
-  <section class="row contact-row">
+  <section class="row justify-content-around">
     <?php if (get_field("contact_image")) : ?>
       <div class="col-md-6 col-sm-12">
         <img class="contact-image img-fluid" src="<?php echo get_field("contact_image") ?>" alt=""/>

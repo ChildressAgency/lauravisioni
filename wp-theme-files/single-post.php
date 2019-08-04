@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <article class="post">
-    <div class="row">
+    <div class="row justify-content-around">
       <?php
       the_post();
       $image = has_post_thumbnail() ?
@@ -13,15 +13,14 @@
 
       <h3 class="post-date col-md-10 col-sm-12"><?php the_date() ?></h3>
 
-      <h2 class= col-md-10"col-sm-12"><?php the_title() ?></h2>
+      <h2 class=col-md-10"col-sm-12"><?php the_title() ?></h2>
 
-      <div class="col-md-10 col-sm-12 left-border row post-body">
+      <div class="col-md-10 col-sm-12 left-border row justify-content-around post-body">
         <section class="post-content"><?php the_content() ?></section>
       </div>
     </div>
 
-
-    <div class="row">
+    <div class="row justify-content-around">
       <div class="col-10 row gallery">
         <?php if (get_field("gallery")): ?>
           <?php foreach (get_field("gallery") as $image): ?>
