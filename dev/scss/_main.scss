@@ -231,35 +231,39 @@ a.button, .wpcf7 input[type=submit] {
   }
 }
 
+li.menu-item {
+  flex-grow: 1;
+  position: relative;
+
+  a {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 24px;
+    color: #3C3C38 !important;
+  }
+
+  :hover {
+    text-decoration: none;
+  }
+}
+
+li.menu-item.active a {
+  color: #746F33 !important;
+}
+
+ul.dropdown-menu {
+  width: 100%;
+  border: none;
+  background-color: white;
+
+  a.dropdown-item:hover {
+    background-color: white;
+    color: #FFB575;
+  }
+}
+
 #header-navbar {
   ul.nav {
     flex-grow: 1;
-
-    li.menu-item {
-      flex-grow: 1;
-      position: relative;
-
-      a {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 24px;
-        color: #3C3C38;
-      }
-    }
-
-    li.menu-item.active a {
-      color: #746F33;
-    }
-
-    ul.dropdown-menu {
-      width: 100%;
-      border: none;
-      background-color: white;
-
-      a.dropdown-item:hover {
-        background-color: white;
-        color: #FFB575;
-      }
-    }
   }
 
   @include media-breakpoint-up(md) {
