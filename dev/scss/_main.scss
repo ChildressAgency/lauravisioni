@@ -8,6 +8,7 @@ h2 {
   color: #746F33;
   font-size: 60px;
   font-family: "Barlow Condensed", sans-serif;
+  font-weight: normal;
 }
 
 h3 {
@@ -384,6 +385,22 @@ body.page-template-page-about {
   .wpcf7-form-control-wrap {
     display: block;
   }
+}
+
+.prev-link a, .next-link a {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.prev-link a {
+  background-image: url("img/prev.png");
+}
+
+.next-link a {
+  background-image: url("img/next.png");
 }
 
 body.single-print {
