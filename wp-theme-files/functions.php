@@ -118,5 +118,10 @@ function cai_widgets_init()
 
 }
 
+function cai_get_print_orientation($image)
+{
+  return $image["width"] > $image["height"] ? "landscape" : "portrait";
+}
+
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
 require_once dirname(__FILE__) . '/includes/custom-fields.php';

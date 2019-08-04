@@ -3,7 +3,7 @@
   <div class="row" id="print-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php if (get_field("image")): ?>
       <section class="col-10 image">
-        <?php $orientation = get_field("image")["width"] > get_field("image")["height"] ? "landscape" : "portrait"; ?>
+        <?php $orientation = cai_get_print_orientation(get_field("image")); ?>
         <img src="<?php echo get_field("image")["sizes"]["large"] ?>" alt="<?php the_title() ?>"
              class="img-fluid large-image"/>
       </section>
