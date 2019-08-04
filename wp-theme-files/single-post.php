@@ -9,22 +9,36 @@
         : get_template_directory_uri() . "/img/post_default.png";
       ?>
 
-      <div class="featured-image col-12" style="background-image: url('<?php echo $image ?>')"></div>
+      <div class="featured-image col-md-10 col-sm-12" style="background-image: url('<?php echo $image ?>')"></div>
 
-      <h3 class="post-date col-12"><?php the_date() ?></h3>
+      <h3 class="post-date col-md-10 col-sm-12"><?php the_date() ?></h3>
 
-      <h2 class="col-12"><?php the_title() ?></h2>
+      <h2 class= col-md-10"col-sm-12"><?php the_title() ?></h2>
+
+      <div class="col-md-10 col-sm-12 left-border row post-body">
+        <section class="post-content"><?php the_content() ?></section>
+      </div>
     </div>
 
-    <div class="row left-border">
-      <section class="post-content"><?php the_content() ?></section>
-    </div>
 
     <div class="row">
-      <section class="col-6 nav-link">
+      <div class="col-10 row gallery">
+        <?php if (get_field("gallery")): ?>
+          <?php foreach (get_field("gallery") as $image): ?>
+            <div class="col-md-6 col-sm-12 image">
+              <img class="img-fluid" src="<?php echo $image["sizes"]["medium_large"] ?>"
+                   alt="<?php echo $image["title"] ?>"/>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      </div>
+    </div>
+
+    <div class="row justify-content-start">
+      <section class="col-md-5 offset-md-1 col-sm-6 nav-link">
         <h3><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>">&lt; Back to All Pages</a></h3>
       </section>
-      <section class="col-6 nav-link text-right">
+      <section class="col-md-5 col-sm-6 nav-link text-right">
         <h3><?php next_post_link("%link", "Next Journal Page &gt;") ?></h3>
       </section>
     </div>
