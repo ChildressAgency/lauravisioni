@@ -94,11 +94,42 @@ function cai_create_post_types()
     "public" => true,
     "labels" => array(
       "name" => "Prints",
-      "singular" => "Print"
+      "singular" => "Print",
+      'search_items' => 'Search Prints',
+      'all_items' => 'All Prints',
+      'edit_item' => 'Edit Print',
+      'update_item' => 'Update Print',
+      'add_new_item' => 'Add New Print',
+      'menu_name' => 'Print',
     )
   ));
   flush_rewrite_rules();
 }
+
+function cai_create_taxonomies()
+{
+  register_taxonomy('print_category', ['print'], [
+    'hierarchical' => true,
+    'labels' => [
+      'name' => 'Print Categories',
+      'singular_name' => 'Print Category',
+      'search_items' => 'Search Print Categories',
+      'all_items' => 'All Print Categories',
+      'parent_item' => 'Parent Print Category',
+      'parent_item_colon' => 'Parent Print Category:',
+      'edit_item' => 'Edit Print Category',
+      'update_item' => 'Update Print Category',
+      'add_new_item' => 'Add New Print Category',
+      'new_item_name' => 'New Print Category Name',
+      'menu_name' => 'Print Category',
+    ],
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => ['slug' => 'print_category'],
+  ]);
+}
+add_action('init', 'cai_create_taxonomies');
 
 add_action('widgets_init', 'cai_widgets_init');
 function cai_widgets_init()
