@@ -203,7 +203,7 @@ a.button, .wpcf7 input[type=submit] {
 
 #header.small {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 72px;
 
   ul.nav {
     max-width: 500px;
@@ -356,6 +356,7 @@ body.page-template-page-about {
 
   img.about-image {
     max-width: 333px;
+    max-height: 500px;
   }
 
   img.contact-image {
@@ -363,6 +364,7 @@ body.page-template-page-about {
   }
 
   .contact-col {
+    padding-left: 72px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

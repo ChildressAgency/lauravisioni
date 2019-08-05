@@ -5,7 +5,7 @@ get_header(); ?>
   <section class="row">
     <?php if (get_field("about_image")) : ?>
       <div class="col-lg-5 col-sm-12">
-        <img class="img-fluid" src="<?php echo get_field("about_image") ?>" alt=""/>
+        <img class="img-fluid about-image" src="<?php echo get_field("about_image") ?>" alt=""/>
       </div>
     <?php endif ?>
     <article class="col-lg-7 col-sm-12" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -28,7 +28,7 @@ get_header(); ?>
 
   <section class="row justify-content-around">
     <?php if (get_field("contact_image")) : ?>
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-5 offset-md-1 col-sm-12">
         <img class="contact-image img-fluid" src="<?php echo get_field("contact_image") ?>" alt=""/>
       </div>
     <?php endif ?>
