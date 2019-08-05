@@ -10,14 +10,44 @@
   </section>
 
 <?php while (have_rows('gallery_block')): the_row(); ?>
-  <?php if (get_sub_field("gallery")): ?>
+  <?php if (get_sub_field("gallery")):
+    $images = get_sub_field("gallery");
+    $layout = get_sub_field("layout");
+    $side = $images[0];
+    $top = $images[1];
+    $bot = $images[2];
+    ?>
     <section class="row home-gallery">
-      <?php
-      $code = '[phmm-project id="' . get_sub_field("gallery") . '"]';
-      echo "generated shortcode: " . $code;
-      echo codeneric\phmm\base\frontend\Main::gallery_shortcode($code);
-//      echo do_shortcode($code);
-      ?>
+
+      <?php if ($side && ($layout === "left")): ?>
+        <div class="col-6 big">
+          <a href="<?php echo wp_get_attachment_url($side["id"]) ?>"
+             style="background-image: url('<?php echo $side["sizes"]["large"] ?>')"></a>
+        </div>
+      <?php endif; ?>
+
+      <div class="col-6 flex-column align-content-stretch">
+        <?php if ($top): ?>
+          <a href="<?php echo wp_get_attachment_url($top["id"]) ?>">
+            <img src="<?php echo $top["sizes"]["large"] ?>" class="img-fluid"
+                 alt="<?php echo $top["title"] ?>"/>
+          </a>
+        <?php endif; ?>
+        <?php if ($bot): ?>
+          <a href="<?php echo wp_get_attachment_url($bot["id"]) ?>">
+            <img src="<?php echo $bot["sizes"]["large"] ?>" class="img-fluid"
+                 alt="<?php echo $bot["title"] ?>"/>
+          </a>
+        <?php endif; ?>
+      </div>
+
+      <?php if ($side && ($layout !== "left")): ?>
+        <div class="col-6 big">
+          <a href="<?php echo wp_get_attachment_url($side["id"]) ?>"
+             style="background-image: url('<?php echo $side["sizes"]["large"] ?>')"></a>
+        </div>
+      <?php endif; ?>
+
     </section>
   <?php endif; ?>
   <section class="row quote">
