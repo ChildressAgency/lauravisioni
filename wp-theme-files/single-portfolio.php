@@ -5,7 +5,7 @@
       <div class="col-12 gallery">
         <?php if (get_field("gallery")): ?>
           <?php foreach (get_field("gallery") as $image): ?>
-            <a href="<?php echo wp_get_attachment_url($image["id"]) ?>">
+            <a href="<?php echo get_attachment_link($image["id"]) ?>">
               <img class="img-fluid" src="<?php echo $image["sizes"]["medium_large"] ?>"
                    alt="<?php echo $image["title"] ?>"/>
             </a>

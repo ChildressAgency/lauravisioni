@@ -24,10 +24,10 @@
       <div class="col-10 row gallery">
         <?php if (get_field("gallery")): ?>
           <?php foreach (get_field("gallery") as $image): ?>
-            <div class="col-md-6 col-sm-12 image">
+            <a href="<?php echo get_attachment_link($image["id"]) ?>" class="col-md-6 col-sm-12 image">
               <img class="img-fluid" src="<?php echo $image["sizes"]["medium_large"] ?>"
                    alt="<?php echo $image["title"] ?>"/>
-            </div>
+            </a>
           <?php endforeach; ?>
         <?php endif; ?>
       </div>

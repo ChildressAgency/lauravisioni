@@ -20,21 +20,21 @@
     <section class="row home-gallery">
 
       <?php if ($side && ($layout === "left")): ?>
-        <div class="col-6 big">
-          <a href="<?php echo wp_get_attachment_url($side["id"]) ?>"
+        <div class="col-5 big">
+          <a href="<?php echo get_attachment_link($side["id"]) ?>"
              style="background-image: url('<?php echo $side["sizes"]["large"] ?>')"></a>
         </div>
       <?php endif; ?>
 
-      <div class="col-6 flex-column align-content-stretch">
+      <div class="col col-7 flex-column align-content-stretch">
         <?php if ($top): ?>
-          <a href="<?php echo wp_get_attachment_url($top["id"]) ?>">
+          <a href="<?php echo get_attachment_link($top["id"]) ?>">
             <img src="<?php echo $top["sizes"]["large"] ?>" class="img-fluid"
                  alt="<?php echo $top["title"] ?>"/>
           </a>
         <?php endif; ?>
         <?php if ($bot): ?>
-          <a href="<?php echo wp_get_attachment_url($bot["id"]) ?>">
+          <a href="<?php echo get_attachment_link($bot["id"]) ?>">
             <img src="<?php echo $bot["sizes"]["large"] ?>" class="img-fluid"
                  alt="<?php echo $bot["title"] ?>"/>
           </a>
@@ -42,8 +42,8 @@
       </div>
 
       <?php if ($side && ($layout !== "left")): ?>
-        <div class="col-6 big">
-          <a href="<?php echo wp_get_attachment_url($side["id"]) ?>"
+        <div class="col-5 big">
+          <a href="<?php echo get_attachment_link($side["id"]) ?>"
              style="background-image: url('<?php echo $side["sizes"]["large"] ?>')"></a>
         </div>
       <?php endif; ?>
