@@ -116,7 +116,7 @@ h4 {
   }
 }
 
-a.button, .wpcf7 input[type=submit] {
+a.button, input[type=submit] {
   display: inline-block;
   line-height: 23px;
   vertical-align: middle;
@@ -381,8 +381,26 @@ body.page-template-page-about {
   box-shadow: none !important;
 }
 
-.project h2 {
-  margin-bottom: 32px;
+.project {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  .project-auth {
+    h2 {
+      margin-bottom: 60px;
+      margin-top: -18px; /* I don't know why */
+    }
+
+    form {
+      max-width: 320px;
+      margin: auto;
+    }
+
+    input[type=text], input[type=password] {
+      min-width: 300px;
+    }
+  }
 }
 
 .home-gallery {
@@ -408,6 +426,16 @@ body.page-template-page-about {
   }
 }
 
+input[type=text], input[type=email], input[type=password], textarea {
+  border: 2px solid #1A1818;
+  background-color: #fffcf9;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  height: 45px;
+  max-width: none;
+}
+
 .wpcf7 {
   label {
     height: 26px;
@@ -420,16 +448,6 @@ body.page-template-page-about {
   label.secondary {
     font-weight: normal;
     font-size: 18px;
-  }
-
-  input[type=text], input[type=email], textarea {
-    border: 2px solid #1A1818;
-    background-color: #fffcf9;
-  }
-
-  input[type=text], input[type=email] {
-    height: 45px;
-    max-width: none;
   }
 
   .wpcf7-form-control-wrap {
