@@ -57,6 +57,9 @@
     </blockquote>
   </section>
 <?php endwhile; ?>
+
+<?php get_template_part("template-parts/widgets/pre-footer"); ?>
+
   <section class="row front-contact">
     <div class="col-4">
       <?php if (get_field("contact_image")): ?>

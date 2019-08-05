@@ -18,4 +18,6 @@
     <?php endwhile; endif; ?>
   </section>
 
+<?php get_template_part("template-parts/widgets/pre-footer"); ?>
+
 <?php get_footer();
