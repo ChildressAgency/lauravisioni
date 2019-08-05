@@ -57,5 +57,26 @@
     </blockquote>
   </section>
 <?php endwhile; ?>
+  <section class="row front-contact">
+    <div class="col-4">
+      <?php if (get_field("contact_image")): ?>
+        <img class="img-fluid" src="<?php echo get_field("contact_image")["sizes"]["large"] ?>" alt="Contact"/>
+      <?php endif; ?>
+    </div>
+    <div class="col-8">
+      <div class="row quote">
+        <section class="col-10 offset-2">
+          <img src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" alt="Logo"/>
+        </section>
+        <section class="col-10 offset-2">
+          <a class="button" href="<?php echo get_permalink(get_page_by_path("contact")) ?>">Contact</a>
+        </section>
+        <blockquote class="col-7">
+          <p>Photography is a love affair with life</p>
+          <cite>&mdash;Burk Uzzle</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
 <?php
 get_footer();

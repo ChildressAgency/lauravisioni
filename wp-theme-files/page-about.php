@@ -36,7 +36,7 @@ get_header(); ?>
       <p></p>
       <img src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" alt="Logo"/>
 
-      <a class="button" href="/">Contact</a>
+      <a class="button" href="<?php echo get_permalink(get_page_by_path("contact")) ?>">Contact</a>
       <p></p>
     </div>
   </section>

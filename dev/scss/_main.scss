@@ -160,48 +160,58 @@ a.button, input[type=submit] {
   }
 }
 
+.front-contact {
+  .quote {
+    margin: 0 !important;
+  }
+
+  section {
+    margin-bottom: 60px;
+  }
+}
+
 .row.quote {
   justify-content: center;
   margin: 64px auto;
+}
 
-  blockquote {
-    p {
-      font-size: 20px;
-      font-family: "Barlow", sans-serif;
-      font-style: italic;
-      font-weight: 500;
-    }
+blockquote {
+  p {
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+  }
 
-    p:before, p:after {
-      font-family: "Helvetica", serif;
-      font-size: 100px;
-      font-style: normal;
-      line-height: 30px;
-      color: #746F33;
-      opacity: 0.75;
-      position: absolute;
-    }
+  p:before, p:after {
+    font-family: "Helvetica", serif;
+    font-size: 100px;
+    font-style: normal;
+    line-height: 30px;
+    color: #746F33;
+    opacity: 0.75;
+    position: absolute;
+  }
 
-    p:before {
-      content: "\201c";
-      left: -26px;
-      top: 18px;
-    }
+  p:before {
+    content: "\201c";
+    left: -26px;
+    top: 18px;
+  }
 
-    p:after {
-      content: "\201d";
-      bottom: 14px;
-      margin-left: 6px;
-    }
+  p:after {
+    content: "\201d";
+    bottom: 14px;
+    margin-left: 6px;
+  }
 
-    cite {
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 26px;
-      font-style: normal;
-      color: #746F33;
-      opacity: 0.75;
-      float: right;
-    }
+  cite {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    color: #746F33;
+    opacity: 0.75;
+    float: right;
   }
 }
 
