@@ -71,8 +71,13 @@ h4 {
 
 .single-portfolio {
   .gallery {
-    column-count: 4;
     column-gap: 0;
+    @include media-breakpoint-up(md) {
+      column-count: 4;
+    }
+    @include media-breakpoint-down(sm) {
+      column-count: 2;
+    }
 
     a {
       display: block;
