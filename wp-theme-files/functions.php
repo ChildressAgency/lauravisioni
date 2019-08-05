@@ -100,7 +100,20 @@ function cai_create_post_types()
       'edit_item' => 'Edit Print',
       'update_item' => 'Update Print',
       'add_new_item' => 'Add New Print',
-      'menu_name' => 'Print',
+      'menu_name' => 'Prints',
+    )
+  ));
+  register_post_type("portfolio", array(
+    "public" => true,
+    "labels" => array(
+      "name" => "Portfolio Galleries",
+      "singular" => "Portfolio Gallery",
+      'search_items' => 'Search Galleries',
+      'all_items' => 'All Galleries',
+      'edit_item' => 'Edit Gallery',
+      'update_item' => 'Update Gallery',
+      'add_new_item' => 'Add New Gallery',
+      'menu_name' => 'Portfolio',
     )
   ));
   flush_rewrite_rules();
@@ -129,6 +142,7 @@ function cai_create_taxonomies()
     'rewrite' => ['slug' => 'print_category'],
   ]);
 }
+
 add_action('init', 'cai_create_taxonomies');
 
 add_action('widgets_init', 'cai_widgets_init');

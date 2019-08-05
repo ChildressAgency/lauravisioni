@@ -69,6 +69,23 @@ h4 {
   height: 525px;
 }
 
+.single-portfolio {
+  .gallery {
+    column-count: 4;
+    column-gap: 0;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 4px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .post {
   .post-content {
     max-width: 544px;
