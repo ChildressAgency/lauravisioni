@@ -4,7 +4,7 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
   <section class="row">
     <?php if (get_field("about_image")) : ?>
-      <div class="col-lg-5 col-sm-12">
+      <div class="col-lg-5 col-sm-12 text-center">
         <img class="img-fluid about-image" src="<?php echo get_field("about_image") ?>" alt=""/>
       </div>
     <?php endif ?>
@@ -34,7 +34,7 @@ get_header(); ?>
     <?php endif ?>
     <div class="col-md-5 col-sm-12 contact-col">
       <p></p>
-      <img src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" alt="Logo"/>
+      <img src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" class="img-fluid" alt="Logo"/>
 
       <a class="button" href="<?php echo get_permalink(get_page_by_path("contact")) ?>">Contact</a>
       <p></p>

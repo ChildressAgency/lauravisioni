@@ -163,6 +163,14 @@ function cai_widgets_init()
 
 }
 
+add_filter( 'wp_get_attachment_image_attributes', function( $attr )
+{
+  if( isset( $attr['class'] )  && 'custom-logo' === $attr['class'] )
+    $attr['class'] = 'custom-logo img-fluid';
+
+  return $attr;
+} );
+
 function cai_get_print_orientation($image)
 {
   return $image["width"] > $image["height"] ? "landscape" : "portrait";

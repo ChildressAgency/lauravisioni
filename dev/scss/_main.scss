@@ -392,10 +392,6 @@ body.page-template-page-about {
     max-height: 500px;
   }
 
-  img.contact-image {
-    max-width: 500px;
-  }
-
   .contact-col {
     padding-left: 72px;
     display: flex;
@@ -547,6 +543,8 @@ div.print {
   padding: 50px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
 
   img {
     max-width: 100%;

@@ -61,15 +61,15 @@
 <?php get_template_part("template-parts/widgets/pre-footer"); ?>
 
   <section class="row front-contact">
-    <div class="col-4">
+    <div class="col-md-4 col-sm-12">
       <?php if (get_field("contact_image")): ?>
         <img class="img-fluid" src="<?php echo get_field("contact_image")["sizes"]["large"] ?>" alt="Contact"/>
       <?php endif; ?>
     </div>
-    <div class="col-8">
+    <div class="col-md-8 col-sm-12">
       <div class="row quote">
         <section class="col-10 offset-2">
-          <img src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" alt="Logo"/>
+          <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" alt="Logo"/>
         </section>
         <section class="col-10 offset-2">
           <a class="button" href="<?php echo get_permalink(get_page_by_path("contact")) ?>">Contact</a>
