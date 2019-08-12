@@ -68,10 +68,10 @@
     </div>
     <div class="col-md-8 col-sm-12">
       <div class="row quote">
-        <section class="col-10 offset-2">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" alt="Logo"/>
+        <section class="col-12 col-md-10 offset-md-2">
+          <img class="img-fluid contact-logo" src="<?php echo get_template_directory_uri() ?>/img/logo-med.png" alt="Logo"/>
         </section>
-        <section class="col-10 offset-2">
+        <section class="col-12 col-md-10 offset-md-2 text-center text-md-left">
           <a class="button" href="<?php echo get_permalink(get_page_by_path("contact")) ?>">Contact</a>
         </section>
         <blockquote class="col-7">
