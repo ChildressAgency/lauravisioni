@@ -1,12 +1,5 @@
 <?php
 
-add_action('wp_footer', 'show_template');
-function show_template()
-{
-  global $template;
-  print_r($template);
-}
-
 add_action('wp_enqueue_scripts', 'cai_scripts');
 function cai_scripts()
 {
