@@ -8,7 +8,7 @@
     </div>
   </div>
 
-  <section class="row" id="print-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <section class="row no-gutters" id="print-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="col-1 prev-link">
       <?php previous_image_link("large", "&nbsp;"); ?>
     </div>
