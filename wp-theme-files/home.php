@@ -18,6 +18,10 @@
     <?php endwhile; endif; ?>
   </section>
 
-<?php get_template_part("template-parts/widgets/pre-footer"); ?>
+  <section class="row justify-content-center">
+    <div class="col-12 col-md-10">
+      <?php get_template_part("template-parts/widgets/pre-footer"); ?>
+    </div>
+  </section>
 
 <?php get_footer();

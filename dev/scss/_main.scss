@@ -565,3 +565,22 @@ div.print.portrait {
 div.print.landscape {
   background-image: url("img/print-landscape.png");
 }
+
+.pre-footer {
+  margin: 200px -3px 80px;
+  position: relative;
+
+  .instagram-social-btn-top {
+    position: absolute;
+    right: 6px;
+    top: -32px;
+  }
+
+  .widget-title {
+    position: absolute;
+    top: -32px;
+    left: 6px;
+    font-size: 28px;
+    font-family: Barlow, sans-serif;
+  }
+}
