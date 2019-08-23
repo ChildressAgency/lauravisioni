@@ -43,7 +43,7 @@
       </section>
 
       <section class="col-md-4 offset-md-1 col-sm-12">
-        <a href="<?php echo get_permalink(get_page_by_path("contact")) ?>" class="button">Contact for Pricing</a>
+        <a href="<?php echo get_permalink(get_page_by_path("contact")) ?>" class="button">Contact for Purchase</a>
       </section>
     <?php endif; ?>
   </section>
