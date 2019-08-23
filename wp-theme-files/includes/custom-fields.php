@@ -1,6 +1,9 @@
 <?php
 
-if (function_exists('acf_add_local_field_group')):
+add_action('acf/init', 'cai_add_custom_fields');
+function cai_add_custom_fields()
+{
+  acf_add_options_page("Theme Settings");
 
   acf_add_local_field_group(array(
     'key' => 'group_5d37c40f95156',
@@ -727,4 +730,4 @@ if (function_exists('acf_add_local_field_group')):
     'description' => '',
   ));
 
-endif;
+}
