@@ -16,7 +16,7 @@
     </section>
   <?php endif; ?>
   <section class="row quote">
-    <blockquote class="col-6">
+    <blockquote class="col-10 col-md-6">
       <p><?php the_sub_field("quote_body"); ?></p>
       <cite>&mdash;<?php the_sub_field("quote_author"); ?></cite>
     </blockquote>
