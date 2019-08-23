@@ -27,7 +27,7 @@
         <h3><?php echo get_field("subtitle") ?></h3>
 
         <p><?php the_content() ?></p>
-        <?php if (has_sub_field("sizes")): ?>
+        <?php if (have_rows("sizes")): ?>
           <p>Available in these sizes:</p>
           <div class="left-border">
             <?php while (have_rows("sizes")): the_row(); ?>
