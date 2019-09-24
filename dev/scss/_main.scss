@@ -589,6 +589,10 @@ div.print.landscape {
     text-align: center;
   }
 
+  .slicker-instaG-photoshadow {
+    opacity: 0 !important;
+  }
+
   @include media-breakpoint-up(sm) {
 
     .instagram-social-btn-top {
