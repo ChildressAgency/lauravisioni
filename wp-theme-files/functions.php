@@ -19,8 +19,17 @@ function cai_scripts()
     true
   );
 
+  wp_register_script(
+    'lauravisioni-scripts',
+    get_stylesheet_directory_uri() . '/js/custom-scripts.min.js',
+    array('jquery', 'bootstrap-scripts'),
+    '',
+    true
+  );
+
   wp_enqueue_script('bootstrap-popper');
   wp_enqueue_script('bootstrap-scripts');
+  wp_enqueue_script('lauravisioni-scripts');
 }
 
 add_filter('script_loader_tag', 'cai_add_script_meta', 10, 2);
