@@ -15,6 +15,7 @@ jQuery(document).ready(function($){
       },
       autoHeight: true,
       effect: 'fade',
+      fadeEffect: { crossFade: true },
       autoplay: false,
       spaceBetween: 35,
       preloadImages: true,
